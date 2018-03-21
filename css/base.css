@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1210px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+
+/*快速导航样式*/
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F1F1F1;
+}
+.fl,
+.shortcut .fore{
+    position: relative;
+    color: #787878;
+    padding: 0 25px 0 8px;
+    font:400 12px/30px 'mircrosoft yahei','宋体';
+}
+.shortcut .fore{
+    padding: 0 15px 0 8px;
+}
+.fl i,
+.fore i
+{
+    position: absolute;
+    top: 12px;
+    right: 9px;
+    width: 9px;
+    height: 5px;
+    overflow: hidden;
+}
+.fore i{
+    right: 0px;
+}
+.fl s,
+.fore s
+{
+    position: absolute;
+    top: -14px;
+    left: 0;
+    font-size: 10px;
+}
+
+.fr li {
+    float: left;
+    padding-left: 11px;
+}
+.fr li.line {
+    width: 1px;
+    height: 12px;
+    background-color: #DCDCDC;
+    margin:9px 0 0 10px;
+    padding-left:0;
+}
+.shortcut .tel_jd{
+    padding-left: 25px;
+}
+.tel_jd em{
+    position: absolute;
+    left: 9px;
+    top: 4px;
+    width: 15px;
+    height: 20px;
+    background: url(../img/sprite.png) no-repeat 0 0;
+}
+/*顶部广告*/
+.topbanner {
+    background-color: #8B25C6;
+}
+.topbanner .w {
+    position: relative;
+}
+.topbanner img {
+    width: 1210px;
+    height: 80px;
+    margin: 0 auto;
+}
+.topbanner .close_banner {
+    position: absolute;
+    top:0;
+    right: 0px;
+    width: 19px;
+    height: 19px;
+    background: url(../img/close.png) no-repeat 0 0;
+}
+
+/*logo,搜索框，购物车*/
+.logo {
+    float: left;
+    width: 350px;
+    height: 100px;
+    position: relative;
+    background:#fff url(../img/logo.png) no-repeat 0 center;
+    padding-right: 12px;
+}
+.logo h1 {
+    text-indent: -99999em;
+}
+.logo a {
+    display: block;
+    width: 270px;
+    height: 100px;
+}
+.logo img {
+    position: absolute;
+    top:5px;
+    right: 0;
+}
+
+.search {
+    float: left;
+    margin-top: 25px;
+
+}
+.search .txt {
+    float: left;
+    width: 450px;
+    height: 32px;
+    border: 2px solid #B71E19;
+    padding-left: 4px;
+    font: 12px/32px 'microsoft yahei';
+    color: #848484;
+}
+.search button {
+    float: left;
+    width: 80px;
+    height: 36px;
+    background-color: #B71E19;
+    color: #FFE8FF;
+    font: 16px/36px 'microsoft yahei';
+    text-align: center;
+    cursor: pointer;
+}
+
+.car {
+    position: relative;
+    float: left;
+    font: 12px/34px 'microsoft yahei';
+    border: 1px solid #DCDCDC;
+    padding: 0 35px 0 40px;
+    margin: 25px 0 0 106px;
+}
+.car s {
+    cursor: default;
+}
+.car .icon1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 16px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat -1px -59px;
+}
+.car .icon2 {
+    font: 400 13px/13px simsun;
+    position: absolute;
+    right: 10px;
+    top:12px;
+
+}
+.car .icon3 {
+    position: absolute;
+    right: 20px;
+    top: -4px;
+    width: 16px;
+    height: 14px;
+    background-color: #CD1B29;
+    border-radius: 7px 7px 7px 0;
+    color: #FFE4F1;
+    line-height: 16px;
+    text-align: center;
+}
+.hotwords {
+    float: left;
+    width:535px ;
+    font: 12px/28px simsun;
+}
+.hotwords a {
+    padding-right: 5px;
+}
+
+.nav {
+    height: 44px;
+    border-bottom:2px solid #B3191B;
+}
+.dropdown {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 44px;/*必须有高，否则会导致布局错乱*/
+    overflow: visible;
+    z-index: 10;
+}
+.dropdown .dt {
+    float: left;
+    width: 201px;
+    padding-left: 9px;
+    /*height: 44px;*/
+    font: 14px/44px 'microsoft yahei';
+    color: #FFEFE3;
+    background-color: #B3191B;
+}
+.dropdown .dd{
+    float: left;
+    height: 465px;
+    width: 208px;
+    background-color: #C81721;
+    border: 1px solid #972A30;
+}
+.item {
+    padding-left: 10px;
+    height: 31px;
+}
+.item h3 {
+    float: left;
+    font: 14px/30px 'microsoft yahei';
+    color: #FFF0C8;
+}
+.item span {
+    float: right;
+    color: #FFF0C8 ;
+    font: 700 14px/30px simsun;
+    margin-right: 15px;
+}
+.navitems {
+    float: left;
+    height: 44px;
+}
+.navitems li {
+    list-style: none;
+    float: left;
+}
+.navitems li.new {
+    background: url(../img/new.jpg) no-repeat right top;
+}
+.navitems a {
+    font: 14px/44px 'microsoft yahei';
+    padding: 0 20px;
+}
+.bike {
+    float: right;
+
+}
+/*头部结束*/
+/*底部开始*/
+.slogen {
+    position: relative;
+    height: 102px;
+    border-bottom: 1px solid #DEDEDE;
+    background-color: #F5F5F5;
+}
+.slogen span img{
+    position: absolute;
+    left: 50%;
+    top: 23px;
+}
+.item0 img{
+    margin-left: -605px;
+}
+.item1 img{
+    margin-left: -275px;
+}
+.item2 img{
+    margin-left:55px;
+}
+.item3 img{
+    margin-left: 385px;
+}
+.service .info {
+    height: 200px;
+}
+.service dl {
+    float: left;
+    width: 198px;
+    padding-top: 24px;
+    font-family: 'microsoft yahei';
+}
+.service dt ,
+.coverage .title
+{
+    font: 700 14px 'microsoft yahei';
+    height: 29px;
+}
+
+.service dd {
+    font-size: 13px;
+    height: 23px;
+}
+.coverage {
+    float: right;
+    width: 202px;
+    height: 170px;
+    background:url(../img/china.png) no-repeat 0 -130px;
+    margin-top: 21px;
+    padding-top: 5px;
+}
+.coverage p {
+    font: 12px/18px  'microsoft yahei';
+    margin: 5px 0;
+}
+.coverage p.look {
+    float: right;
+}
+.copyright {
+    border-top: 1px solid #DEDEDE;
+    text-align: center;
+    font: 12px 'microsoft yahei';
+}
+.links {
+    padding: 26px 0 9px;
+}
+.links a {
+    padding:6px ;
+}
+.right_info {
+    line-height: 18px;
+}
+.message {
+    padding: 9px 0 30px;
+}
+.message img {
+    margin-right: 6px;
+}
